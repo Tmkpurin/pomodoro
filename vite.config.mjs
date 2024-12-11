@@ -6,6 +6,7 @@ import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { VitePluginRadar } from 'vite-plugin-radar'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -45,6 +46,11 @@ export default defineConfig({
       vueTemplate: true,
     }),
     vueDevTools(),
+    VitePluginRadar({
+      analytics: {
+        id: 'G-HD3JDN0XXH',
+      },
+    }),
   ],
   define: { 'process.env': {} },
   resolve: {
