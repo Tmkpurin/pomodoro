@@ -1,15 +1,16 @@
 <template>
-  <v-container>
-    <v-row>
+  <v-container class="background-container">
+    <v-row style="text-align: center">
       <v-col cols="12">
-        <h1>目前事項 {{ currentText }}</h1>
+        <h1>目前事項： {{ currentText }}</h1>
       </v-col>
       <v-col cols="12">
-        <digit v-for="(data, i) in currentTime" :key="i" :data="data" color="white"></digit>
+        <digit v-for="(data, i) in currentTime" :key="i" :data="data" color="aqua"></digit>
       </v-col>
       <v-col cols="12">
         <v-btn
           icon="mdi-play"
+          style="color: aqua"
           :disabled="status === STATUS.COUNTING || (current.length === 0 && items.length === 0)"
           @click="startTimer"
         ></v-btn>
@@ -99,3 +100,12 @@ const currentTime = computed(() => {
 meta:
   title: 倒數
 </route>
+
+<style scoped>
+.background-container {
+  background: url(https://ext.pimg.tw/u750072/1373386671-1555024828.jpg) no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+}
+</style>

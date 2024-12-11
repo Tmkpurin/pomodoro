@@ -11,6 +11,7 @@ export const useSettingsStore = defineStore('settings', {
       { id: 2, name: '耶', file: new URL('@/assets/yay.mp3', import.meta.url).href },
       { id: 3, name: '念書', file: new URL('@/assets/bennkyou.mp3', import.meta.url).href },
       { id: 4, name: 'linkstart', file: new URL('@/assets/linkstart.mp3', import.meta.url).href },
+      { id: 5, name: 'c8763', file: new URL('@/assets/c8763.mp3', import.meta.url).href },
     ],
     selected: 1,
   }),

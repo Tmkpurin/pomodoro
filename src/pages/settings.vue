@@ -61,3 +61,9 @@ const settings = useSettingsStore()
 meta:
   title: 設定
 </route>
+
+<style scoped>
+th {
+  font-size: 20px;
+}
+</style>

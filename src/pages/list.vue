@@ -119,3 +119,10 @@ const onEditSubmit = (id, i) => {
 meta:
   title: 清單
 </route>
+
+<style scoped>
+th {
+  font-size: 20px;
+  width: 50%;
+}
+</style>
